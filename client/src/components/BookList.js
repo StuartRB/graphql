@@ -20,7 +20,7 @@ class BookList extends React.Component {
         )
       } else {
         return this.props.data.books.map(book => {
-          return(<ul key={book.id} onClick={(e) => {this.setState({selected: book.id})}}>{book.name}</ul>);
+          return(<li key={book.id} onClick={(e) => {this.setState({selected: book.id})}}>{book.name}</li>);
         })
       }
   };
